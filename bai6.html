@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.
+    //kq = 3045
+    var n = 1000;
+    var dem = 1;
+    var tong = 0;
+    var i = 1;
+    for (i = 1; i <= n; i++) {
+            if (i % 7 == 0) {
+                dem++;
+                tong += i;
+                document.write(' ' + i + ' ');
+                if(dem ==30)
+                {
+                    break;
+                }
+            }
+    }
+    document.write('<br/>'+tong);
+</script>
+</body>
+</html>
